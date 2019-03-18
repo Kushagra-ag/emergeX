@@ -30,7 +30,13 @@
 .elementor-element-011fe8d section {
     display: inline-block;
     padding: 20px 10px;
-    border-top: 3px solid #d6212a;
+    border-image-slice: 1;
+    border-width: 2px;
+    border-style: solid;
+    border-image: linear-gradient(to right, rgba(214, 33, 42, 0), rgba(214, 33, 42, 1), rgba(214, 33, 42, 0)) 1%;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;;
 }
 
 .section-image {
