@@ -30,6 +30,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 
 html {
+	scroll-behavior: smooth;
 	overflow-y: scroll;
 	/* Keeps page centred in all browsers regardless of content height */
 	-webkit-text-size-adjust: 100%;
@@ -46,6 +47,11 @@ html {
 article, aside, details, figcaption, figure, footer, header, main, nav, section {
 	display: block;
 }
+
+header {
+		background-color: transparent;
+		background-repeat: no-repeat;
+	}
 
 aside::after {
 	float: clear;
@@ -2571,6 +2577,12 @@ li.default-menu {
 	body {
 		padding: 15px 0;
 	}
+	header {
+		background-color: #fff;
+	}
+	.main-navigation a {
+		color: #d6212a;
+	}
 	#featured-slider .entry-container {
 		max-width: 60%;
 	}
@@ -2643,7 +2655,6 @@ li.default-menu {
 }
 
 @media screen and (max-width: 768px) {
-	
 	#ml-form-embedContent {
 		color:black;
 	}
