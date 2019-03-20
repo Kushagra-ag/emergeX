@@ -375,6 +375,8 @@
                   <ul id="menu-main-menu" class="menu nav-menu">
                     <li id="menu-item-19" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19"><a
                         href="#coming">Episodes</a></li>
+                    <li id="menu-item-23" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22"><a
+                        href="https://medium.com/emergextv">Publications</a></li>
                     <li id="menu-item-23" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-23"><a
                         href="#colophon">Contact</a></li>
                   </ul>
@@ -760,7 +762,7 @@
                                       margin: 0 0 20px 0;
                                     }
 
-                                    #mlb2-1233850.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedSubmit button {
+                                    #mlb2-1233850.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedSubmit button:not(#force) {
                                       background-color: #d6212a !important;
                                       border: 2px solid white !important;
                                       border-radius: 4px !important;
@@ -774,6 +776,26 @@
                                       padding: 10px !important;
                                       width: 100% !important;
                                       box-sizing: border-box !important;
+                                    }
+
+                                    #force {
+                                      background-color: transparent;
+                                      border: none;
+                                      height: 0;
+                                      width: 0;
+                                    }
+
+                                    .uni {
+                                      background-color: #d6212a !important;
+                                      border: 2px solid white !important;
+                                      border-radius: 4px !important;
+                                      font-family: 'Open Sans', Arial, Helvetica, sans-serif !important;
+                                      font-size: 14px !important;
+                                      font-weight: 700 !important;
+                                      line-height: 20px !important;
+                                      height: 40px !important;
+                                      width: 100% !important;
+
                                     }
 
                                     #mlb2-1233850.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedSubmit button.loading {
@@ -875,14 +897,14 @@
                                               <input type="text" name="ml_name" tabindex="-1" value="" placeholder="Name"
                                                 autocomplete="off" title="name">
                                             </div>
-                                            <div class="ml-form-formContent">
+                                            <!-- <div class="ml-form-formContent">
                                               <div class="ml-form-fieldRow ml-last-item">
                                                 <div class="ml-field-group ml-field-email ml-validate-email ml-validate-required">
                                                   <input type="email" class="form-control" data-inputmask="" name="fields[email]"
                                                     value="" placeholder="Email">
                                                 </div>
                                               </div>
-                                            </div>
+                                            </div> -->
                                             <style type="text/css">
                                               .ml-form-recaptcha {
                                                 margin-bottom: 20px;
@@ -894,8 +916,32 @@
                                             </style>
                                             <input type="hidden" name="ml-submit" value="1">
                                             <div class="ml-form-embedSubmit">
-                                              <button type="submit" class="primary">Subscribe</button>
-                                              <button disabled="disabled" style="display: none;" type="button" class="loading">
+                                              <!-- <button type="submit" class="primary">Subscribe</button> -->
+                                              <!-- Begin Mailchimp Signup Form -->
+
+
+
+<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+  #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
+  /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+     We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<div id="mc_embed_signup">
+<form action="https://emergex.us20.list-manage.com/subscribe/post?u=3deee1a0966710c0b9c6e74a7&amp;id=2a80452599" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+  
+  <input style="margin-bottom:20px;" type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Email" required>
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_3deee1a0966710c0b9c6e74a7_2a80452599" tabindex="-1" value=""></div>
+    <div class="clear" style="display: block;"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button uni"></div>
+    </div>
+</form>
+</div>
+
+<!--End mc_embed_signup-->
+
+                                              <button disabled="disabled" id="force" style="display: none;" type="button" class="loading">
 
                                                 <div class="ml-form-embedSubmitLoad">
                                                   <div></div>
