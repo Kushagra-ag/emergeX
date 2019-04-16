@@ -55,3 +55,19 @@
     min-width: 60%;
     text-align: left;
 }
+
+@media only screen and (max-width: 650px) {
+
+    .section-image {
+        float: none;
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .section-content {
+        float: none;
+        width: 70%;
+        min-width: unset;
+        max-width: unset;
+    }
+}
